@@ -1,10 +1,48 @@
-* {
-    background-color: #505d6f;
+body {
+    width: 100%;
+    background-color: #FAFDF6;
+    color: #332C23;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+    background-color: #B80C09;
+    color: #FAFDF6;
+    border-radius: 10px;
+}
 
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    & a {
+        color: #4A8FE7;
+    }
+    & a:hover {
+        color: #B80C09;
+    }
+}
 
+section {
+    padding: 10px 20px;
+}
+section:nth-child(odd) {
+    background-color: #B80C09;
+    color: #FAFDF6;
+}
+
+.center {
+    text-align: center;
+}
+
+.rowDisplay {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
 
 .header, .header b, .header form, .header label {
     background-color: #293443;
@@ -16,7 +54,6 @@
     }
 
 }
-
 
 .header input, label {
     margin-top: 16px;
@@ -39,7 +76,6 @@
 
 }
 
-
 .buttons {
     background-color: #293443;
     margin-bottom: 0px;
@@ -52,10 +88,6 @@
         opacity: 0.4;
     }
 }
-
-
-
-
 
 .genre, .movies {
     border: 1px solid #293443;
@@ -78,8 +110,6 @@
         opacity: 0.4;
     }
 }
-
-
 
 .sign h3, .sign form, .sign input{ 
     border: 1px solid #293443;
@@ -108,11 +138,9 @@
     background-color: #c9d5e1;
 }
 
-  
-
 .movies button {
     border: 0;
-    padding: 10px;нннн
+    padding: 10px;
 }
 
 form input {
