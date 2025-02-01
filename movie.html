@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- Author : Gina Philipose
+HTML File : index.html
+Last Update : November 20th, 2024 -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <div class="header">
+        <img src="logo.jpg" width="110" height="100">
+        <div class="buttons">
+          <a href="index.html"><button><h3>Movies</h3></button></a>
+          <a href="template.html"><button><h3>Template</h3></button></a>    
+          <a href="signUp.html"><button id="signRemove"><h3>Sign Up</h3></button></a>
+          <a href="login.html"><button id="loginRemove"><h3>Login</h3></button></a>
+		  <button id="logout"><h3>Log Out</h3></button>
+        </div>
+    </div> 
+
+<!-- working below -->
+<form id = "movieForm" method="POST" action="movie.php">
+<!-- //action="movie.html"> -->
+  <input name="query" type="text" id="movieInput" hidden>
+  <button type="submit" id="movieSubmit" hidden></button>
+</form>
+
+<!-- working above -->
+
+    <script src="script.js"></script>
+    <script src="movie.js"></script>
+</body>
+</html>

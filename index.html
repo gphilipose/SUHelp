@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- Author : Gina Philipose
+HTML File : index.html
+Last Update : November 20th, 2024 -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" width="110" height="100">
+        <div class="buttons">
+          <a href="index.html"><button><h3>Movies</h3></button></a>
+          <a href="template.html"><button><h3>Template</h3></button></a>    
+          <a href="signUp.html"><button id="signRemove"><h3>Sign Up</h3></button></a>
+          <a href="login.html"><button id="loginRemove"><h3>Login</h3></button></a>
+		  <button id="logout"><h3>Log Out</h3></button>
+
+        </div>
+          <label for="mname"><b>Search Movies:&nbsp;</b></label>
+          <input type="text" id="mname" name="mname"> <br> <br>
+          <div class="buttons">
+          <button class="search" id="searchButton"><h3>Search</h3></button>
+        </div>
+    </div> 
+
+    <br>
+
+    <div class="genre">
+        <h3>Genres:</h3>
+        <button class = "genre" id="all"><h3>All</h3></button>
+        <button class = "genre" id="drama"><h3>Drama</h3></button>
+        <button class = "genre" id="action"><h3>Action</h3></button>
+        <button class = "genre" id="comedy"><h3>Comedy</h3></button>
+        <button class = "genre" id="thriller"><h3>Thriller</h3></button>
+        <button class = "genre" id="horror"><h3>Horror</h3></button>
+        <button class = "genre" id="fantasy"><h3>Fantasy</h3></button>
+        <button class = "genre" id="dystopian"><h3>Dystopian</h3></button>
+        <button class = "genre" id="romance"><h3>Romance</h3></button>
+        <button class = "genre" id="documentary"><h3>Documentary</h3></button>
+        <button class = "genre" id="adventure"><h3>Adventure</h3></button>
+    </div>
+
+    <br>
+
+    <div class="movies">
+        <button class="movie" id="1" data-genre="drama" data-title="joker"><img src="1.jpg" width="150" height="200"></button>
+        <button class="movie" id="2" data-genre="action" data-title="rouge one: a star wars story"><img src="2.jpg" width="150" height="200"></button>
+        <button class="movie" id="3" data-genre="comedy" data-title="nightcrawler"><img src="3.jpg" width="150" height="200"></button>
+        <button class="movie" id="4" data-genre="thriller" data-title="ferris bueller's day off"><img src="4.jpg" width="150" height="200"></button>
+        <button class="movie" id="5" data-genre="horror" data-title="21 jump street"><img src="5.jpg" width="150" height="200"></button>
+        <button class="movie" id="6" data-genre="fantasy" data-title="elf"><img src="6.jpg" width="150" height="200"></button>
+        <button class="movie" id="7" data-genre="dystopian" data-title="mcfarland, usa"><img src="7.jpg" width="150" height="200"></button>
+        <button class="movie" id="8" data-genre="romance" data-title="corpse bride"><img src="8.jpg" width="150" height="200"></button>
+        <button class="movie" id="9" data-genre="documentary" data-title="twilight"><img src="9.jpg" width="150" height="200"></button>
+        <button class="movie" id="10" data-genre="adventure" data-title="john wick"><img src="10.jpg" width="150" height="200"></button>
+
+        <br> 
+        <!-- - maybe use carousel motion here with the movie pics -->
+
+
+    </div>
+    <!-- - sign in stores user stuff into the user table (add a password attribute to check for login)
+    <br>
+    - login will lead to a login page which checks with the user table to see if the user exits
+    and if the password matches with the user - give corresponding error messages
+    <br>
+    - after logging in, store the userID in local storage so the user is allowed to make reviews 
+    under their corresponding name
+    <br>
+    - block review making if the user is not logged in (userID in local storage is empty or NULL)
+    <br>
+    - maybe when logged in, add a recommended movies carousel at top with movies of similar genres
+    to what the user had recently reviewed (user review table to check this)
+    <br>
+    - when logged in, an already reviewed movies carousel
+    <br>
+    - when logged in, an not-yet reviewed movies carousel
+    <br> 
+    - Possibly change all the ID's to auto increment whenever we add it
+    (especially for userID - whenever a user account is created)
+    <br>
+    - do we need to use locking for this project?
+      - lock when user account is being added to user -->
+
+
+    <!-- idea: when movie is clicked on, save a json object in local storage and use it 
+    after navigating to the display movie html page to fill in the contents (so we don't
+    need a new html for each movie entry - have review feature on that page)
+ -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>

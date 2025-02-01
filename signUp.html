@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Author : Gina Philipose
+HTML File : signUp.html
+Last Update : November 20th, 2024 -->
+
+
+<!-- Alyssa has this component -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+   <div class="header">
+        <img src="logo.jpg" width="110" height="100">
+        <div class="buttons">
+          <a href="index.html"><button><h3>Movies</h3></button></a>
+          <a href="template.html"><button><h3>Template</h3></button></a>        
+          <a href="signUp.html"><button><h3>Sign Up</h3></button></a>
+          <a href="login.html"><button><h3>Login</h3></button></a>
+        </div>
+    </div> 
+
+
+    <div class="sign">
+
+        <form method="POST" action="sign.php">
+            <label for="fname"><h3>First name:</h3></label>
+            <input type="text" id="fname" name="fname"> <br> <br>
+            <label for="lname"><h3>Last name:</h3></label>
+            <input type="text" id="lname" name="lname"> <br> <br>
+            <label for="email"><h3>Email:</h3></label>
+            <input type="text" id="email" name="email"> <br> <br>
+            <label for="userTag"><h3>Username:</h3></label>
+            <input type="text" id="userTag" name="userTag">
+            <label for="password"><h3>Password:</h3></label>
+            <input type="text" id="password" name="password">
+            <button type="submit">Sign Up</button>
+        </form>
+        
+
+    </div>
