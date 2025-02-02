@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SU Help</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="rowDisplay red">
+    <div class="searchBar">
+      <label for="searchText"><b>Search Resources:&nbsp;</b></label>
+      <input type="text" id="searchText" name="searchText" placeholder="Type a resource!">
+      <button class="search" id="searchButton" type="button">Search</button>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Resources</h2>
+      <div id="resources">
+        <div class="resource">
+          <h3>Drop-in Counselors</h3>
+          <p>Vi Hilbert Hall, 2nd floor</p>
+          <p>Monday-Friday 10:00am-3:00pm</p>
+          <p>Email: financialservices@seattleu.edu</p>
+        </div>
+
+        <div class="resource">
+          <h3>Free Frozen Meals</h3>
+          <p>Student Center 380</p>
+          <p>Monday-Friday 11:30am-1pm</p>
+        </div>
+
+        <div class="resource">
+          <h3>Wellness Cafe and Food Pantry</h3>
+          <p>PAVL 150</p>
+          <p>Tuesday and Wednesday 2pm-6pm</p>
+        </div>
+
+        <div class="resource">
+          <h3>Supplemental Nutrition Assistance Program (SNAP)</h3>
+          <p>Family Food Hotline: 1-888-436-6392</p>
+        </div>
+
+        <div class="resource">
+            <h3>Facilitated Study Groups</h3>
+            <p>LAP, Lemieux Library</p>
+          </div>
+
+          <div class="resource">
+            <h3>Language Conversation Groups</h3>
+            <p>LAP, Lemieux Library</p>
+          </div>
+
+          <div class="resource">
+            <h3>Individual Consultation Appointment</h3>
+            <p>LAP, Lemieux Library</p>
+          </div>
+
+          <div class="resource">
+            <h3>Weekly Tutoring</h3>
+            <p>LAP, Lemieux Library</p>
+          </div>
+
+          <div class="resource">
+            <h3>Drop-In Tutoring</h3>
+            <p>LAP, Lemieux Library</p>
+          </div>
+
+          <div class="resource">
+            <h3>Writing Center</h3>
+            <p>LAP, Lemieux Library</p>
+          </div>
+
+          <div class="resource">
+            <h3>Math Lab</h3>
+            <p>Bannan 500, Monday thru Friday 9:20 am.-5:00 pm</p>
+          </div>
+
+          <div class="resource">
+            <h3>Academic Advising & Drop-In Advising</h3>
+            <p>Bannan 323</p>
+            <p>Mon,Thurs: 12:30-2pm</p>
+            <p>Tues,Wed: 2:00-3:30pm</p>
+          </div>
+
+          <div class="resource">
+            <h3>Work Study</h3>
+            <p>PAVL 110</p>
+          </div>
+
+          <div class="resource">
+            <h3>Scholarships</h3>
+            <p><a href="https://seattleu.scholarshipuniverse.com/">Scholarship Universe</a></p>
+          </div>
+
+          <div class="resource">
+            <h3>Peer to Peer Chats</h3>
+            <p>STCN 380</p>
+          </div>
+
+          <div class="resource">
+            <h3>Counseling and Psychological Services</h3>
+            <p>PAVL 120</p>
+            <p>CAPS office hrs: 8:30am-4:30pm</p>
+            <p>CAPS urgent hrs: 11am-1pm</p>
+          </div>
+          
+          <div class="resource">
+            <h3>Individual Counseling</h3>
+            <p>PAVL 120</p>
+            <p>CAPS office hrs: 8:30am-4:30pm</p>
+            <p>CAPS urgent hrs: 11am-1pm</p>
+          </div>
+
+          <div class="resource">
+            <h3>Group Therapy</h3>
+            <p>PAVL 120</p>
+            <p>CAPS office hrs: 8:30am-4:30pm</p>
+            <p>CAPS urgent hrs: 11am-1pm</p>
+          </div>
+          
+          <div class="resource">
+            <h3>Student Health Center</h3>
+            <p>Bellarmine 107</p>
+            <p>Email: studenthealthcenter@seattleu.edu</p>
+            <p>Physicals, Acute Care, Sports Medicine</p>
+            <p>Skin Care, GYN, Reproductive Health</p>
+            <p>STD evaluation, Mental Health, Imaging</p>
+            <p>Eating Disorder, Labratory Services</p>
+          </div>
+
+          <div class="resource">
+            <h3>Campus Accessibility Maps</h3>
+            <p>Disability Services Office, Loyola Hall</p>
+          </div>
+
+        <div class="resource">
+          <h3>ThreadHawk Thrift</h3>
+          <p>Pigott 110</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('searchButton').addEventListener('click', searchResources);
+    document.getElementById('searchText').addEventListener('keyup', searchResources);
+
+    function searchResources() {
+      const query = document.getElementById('searchText').value.toLowerCase().trim();
+      const resourceContainers = document.querySelectorAll('.resource');
+
+      resourceContainers.forEach(container => {
+        if (container.innerText.toLowerCase().includes(query)) {
+          container.style.display = 'block';
+        } else {
+          container.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
