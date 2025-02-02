@@ -90,6 +90,12 @@ section {
     justify-content: space-around;
 }
 
+.reviewsBox {
+    margin: 10px;
+    border: 2px solid #332C23;
+    border-radius: 5px;
+}
+
 .searchBar {
     height: 30%;
     display: flex;
