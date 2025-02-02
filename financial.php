@@ -118,9 +118,9 @@ Reviews
 
 <?php
 $servername = "cssql.seattleu.edu";
-$username = "ll_gphilipose";
-$password = "r4BB4/4wX8eBo9bZ";
-$dbname = "ll_gphilipose";
+$username = "";
+$password = "";
+$dbname = "";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
