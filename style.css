@@ -16,21 +16,21 @@ nav {
     flex-direction: row;
     flex-wrap: none;
     align-content: end;
-    & a {
-        color: #4A8FE7;
+    & a, > div {
+        color: white;
         display: flex;
         flex-direction: column;
-        justify-content: end;;
+        justify-content: end;
     }
     & a:hover {
-        color: #B80C09;
+        opacity: 0.75;
     }
 }
 
 section {
     padding: 10px 20px;
 }
-section:nth-child(odd) {
+.red {
     background-color: #B80C09;
     color: #FAFDF6;
 }
@@ -46,6 +46,15 @@ section:nth-child(odd) {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+}
+
+.searchBar {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 2px;
+    padding-bottom: 20px;
 }
 
 .header, .header b, .header form, .header label {
