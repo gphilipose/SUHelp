@@ -73,12 +73,14 @@ section {
 }
 
 .evenDisplay {
-    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+}
+div .evenDisplay {
+    width: 100%
 }
 
 .rowDisplay {
@@ -88,6 +90,12 @@ section {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+}
+
+.reviewsBox {
+    margin: 10px;
+    border: 2px solid #332C23;
+    border-radius: 5px;
 }
 
 .searchBar {
