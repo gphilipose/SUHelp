@@ -73,12 +73,14 @@ section {
 }
 
 .evenDisplay {
-    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+}
+div .evenDisplay {
+    width: 100%
 }
 
 .rowDisplay {
