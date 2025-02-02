@@ -1,101 +1,105 @@
-* {
-    background-color: #505d6f;
+body{
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header, .header b, .header form, .header label {
-    background-color: #293443;
-    color: #c9d5e1;
+    background-color: #B80C09;
+    color: #ffffff;
     display: flex;
+    align-items: center;
+    padding: 10px;
     margin-bottom: 0px;
-    input {
-        background-color: #c9d5e1;
-    }
-
 }
 
 .header form {
-    margin-top: 16px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: 10px;
     justify-content: flex-end;
 }
 
 .header input {
-    height: 15px;
+    background-color: #B80C09;
+    color: #B80C09;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    height: 20px;
+    border-radius: 4px;
 }
 
+.header input::placeholder {
+    color: #B80C09;
+}
 
+.header input:focus {
+    outline: none;
+    border: 1px solid #990202;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-content: end;
+    & a, > div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    & a:hover {
+        opacity: 0.75;
+    }
+}
+
+.red {
+    background-color: #B80C09;
+    color: #FAFDF6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 .buttons {
-    background-color: #293443;
-    margin-bottom: 0px;
-    button, h3{
-        background-color: #293443;
-        color: #c9d5e1;
-        border: 0px;
-    }
-    button:hover h3{
-        opacity: 0.4;
-    }
-}
-
-
-.movieDatabase{
-	color: #111929;
+    background-color: #B80C09;
     padding: 10px;
-
 }
 
-
-
-
-.movieDatabase {
-    border: 1px solid #293443;
-
-    h3 button b{
-        color: #111929;
-
-    }
-    h3 input{
-        color: #c1c3c5;
-        display: inline-flex;
-    }
-    button input{
-	background-color: #293443;
-    	margin: 0px;
-	border: 0px;
-    	button, h3{
-        color: #c9d5e1;
-    }
-
-
-    }
-    button input:hover {
-        opacity: 0.4;
-    }
-    form {
-	display: flex;
-    }
-    button {
+button, h3 {
+    background-color: #B80C09;
+    color: #ffffff;
     border: 0px;
-    margin-top: -13px;
-    margin-bottom: -13px;
-    }
 }
 
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
-
-.sign h3, .sign form, .sign input{ 
-    border: 1px solid #293443;
+.sign h3, .sign form, .sign input {
+    background-color: #B80C09;
+    color: #ffffff;
+    border: 1px solid #990202;
     padding: 10px;
-    color: #c9d5e1;
-    background-color: #293443;
- }
+}
 
-
-.sign form input{ 
+.sign form input {
     padding: 10px;
-    color: black;
-    background-color: white;
- }
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+    border: 1px solid #990202;
+}
 
+.sign form input:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+}
