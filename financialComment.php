@@ -33,9 +33,9 @@
 
 <?php
 $servername = "cssql.seattleu.edu";
-$username = "ll_gphilipose";
-$password = "r4BB4/4wX8eBo9bZ";
-$dbname = "ll_gphilipose";
+$username = "";
+$password = "";
+$dbname = "";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
